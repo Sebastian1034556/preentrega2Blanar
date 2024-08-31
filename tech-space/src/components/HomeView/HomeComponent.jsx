@@ -16,7 +16,7 @@ export function HomeComponent({itemList}) {
     }
 
     return (
-        <section className=" flex flex-wrap justify-center items-center ">
+        <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 p-4">
             <ItemListContainer itemList={filteredItemList.length > 0 ? filteredItemList : itemList} />
         </section>
     );
